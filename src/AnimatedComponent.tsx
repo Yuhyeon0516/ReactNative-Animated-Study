@@ -86,24 +86,92 @@ import React, {useRef} from 'react';
 //   );
 // }
 
-// x축 -100 decay
+// x축 -100 -> 100 decay
+// export default function AnimatedComponent() {
+//   const translateXAnim = useRef(new Animated.Value(-100)).current;
+
+//   function onButtonPress() {
+//     Animated.decay(translateXAnim, {
+//       velocity: 1,
+//       deceleration: 0.995,
+//       useNativeDriver: true,
+//     }).start();
+//   }
+
+//   return (
+//     <>
+//       <Button title="!!!!!!!" onPress={onButtonPress} />
+//       <Animated.Text
+//         style={{fontSize: 70, transform: [{translateX: translateXAnim}]}}>
+//         🚘
+//       </Animated.Text>
+//     </>
+//   );
+// }
+
+// sequence, delay, parallel, stagger
+
+// 1) y -200 -> 0 timing
+// 2) x 0 -> 100 timing
 export default function AnimatedComponent() {
-  const translateXAnim = useRef(new Animated.Value(-100)).current;
+  const translateXAnim = useRef(new Animated.Value(0)).current;
+  const translateYAnim = useRef(new Animated.Value(-200)).current;
 
   function onButtonPress() {
-    Animated.decay(translateXAnim, {
-      velocity: 1,
-      deceleration: 0.995,
-      useNativeDriver: true,
-    }).start();
+    // sequence는 동기적으로 순차를 지켜 움직임
+    // Animated.sequence([
+    //   Animated.timing(translateYAnim, {
+    //     toValue: 0,
+    //     useNativeDriver: true,
+    //   }),
+    //   // delay 1000ms 후 뒤에 애니메이션을 동작시킴
+    //   Animated.delay(1000),
+    //   Animated.timing(translateXAnim, {
+    //     toValue: 100,
+    //     useNativeDriver: true,
+    //   }),
+    // ]).start();
+
+    // parallel은 기존에 비동기적으로 움직이는것과 다른것은 없으나 묶여있는 애니메이션중 하나라도 멈추면 전부 멈춤
+    // setTimeout(() => {
+    //   translateXAnim.stopAnimation();
+    // }, 500);
+    // Animated.parallel([
+    //   Animated.timing(translateYAnim, {
+    //     toValue: 0,
+    //     useNativeDriver: true,
+    //   }),
+    //   Animated.timing(translateXAnim, {
+    //     toValue: 100,
+    //     useNativeDriver: true,
+    //   }),
+    // ]).start();
+
+    // stagger는 각 animation 사이에 특정 delay를 주고싶을때 사용함.
+    Animated.stagger(1000, [
+      Animated.timing(translateYAnim, {
+        toValue: 0,
+        useNativeDriver: true,
+      }),
+      Animated.timing(translateXAnim, {
+        toValue: 100,
+        useNativeDriver: true,
+      }),
+    ]).start();
   }
 
   return (
     <>
       <Button title="!!!!!!!" onPress={onButtonPress} />
       <Animated.Text
-        style={{fontSize: 70, transform: [{translateX: translateXAnim}]}}>
-        🚘
+        style={{
+          fontSize: 70,
+          transform: [
+            {translateX: translateXAnim},
+            {translateY: translateYAnim},
+          ],
+        }}>
+        🥝
       </Animated.Text>
     </>
   );
