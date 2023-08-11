@@ -1,6 +1,6 @@
-# ReactNative-Animated-Study
+# Basic
 
-# Timing
+## Timing
 
 - Opacity
   ![video](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/becc6396-9fd6-4a9e-9e91-299d92a73ab5)
@@ -8,17 +8,17 @@
 - TranslateX
   ![video](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/5152c170-73f9-40cf-9a4c-e4cb4f5530d8)
 
-# Sping
+## Sping
 
 - TranslateY
   ![video](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/2883c201-dbdb-4239-b7d1-3c5bf24a34d5)
 
-# Decay
+## Decay
 
 - TranslateX
   ![video](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/fc84fcc0-9645-45af-99cd-40356884f79e)
 
-# Combination
+## Combination
 
 - sequence(TranslateX + TranslateY)
   ![video](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/3bb63ff0-9644-4e78-b97f-1142749e0b59)
@@ -31,3 +31,4 @@
 
 - stagger(TranslateX + TranslateY)
   ![video](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/557a0e72-343e-4d41-be07-e62d29f36847)
+
