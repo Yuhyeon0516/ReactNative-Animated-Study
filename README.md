@@ -32,3 +32,4 @@
 - stagger(TranslateX + TranslateY)
   ![video](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/557a0e72-343e-4d41-be07-e62d29f36847)
 
+# Advance
