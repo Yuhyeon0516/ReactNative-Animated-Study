@@ -32,16 +32,30 @@
 - stagger(TranslateX + TranslateY)
   ![video](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/557a0e72-343e-4d41-be07-e62d29f36847)
 
+---
+
 # Advance
 
 ## Snack Bar
 
+![SnackBar](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/e07c6870-ef9c-4411-b80a-bdf24b232b4e)
+
 ## Drawer Menu
+
+![DrawerMenu](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/be040262-0bc3-4083-b312-bfc9616dea5d)
 
 ## Collapse
 
+![Collapse](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/117454ec-b7bb-4f55-bfd9-af55d2276c22)
+
 ## Progress Bar
+
+![ProgressBar](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/3dc40e75-123a-4838-ad15-76629a4fd87d)
 
 ## Skeleton
 
+![Skeleton](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/b4041337-f22b-4296-bd69-b39009184c27)
+
 ## Snow Background
+
+![SnowBackground](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/ae1a41b2-ac32-485c-8ba0-0002d7d0ccca)
