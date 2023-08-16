@@ -59,3 +59,11 @@
 ## Snow Background
 
 ![SnowBackground](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/ae1a41b2-ac32-485c-8ba0-0002d7d0ccca)
+
+---
+
+# Layout Animation
+
+## Header
+
+## Collapse
