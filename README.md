@@ -66,8 +66,8 @@
 
 ## Header
 
-![]()
+![Header](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/c2ac07d4-7744-463c-b0df-ed8728aa3fae)
 
 ## Collapse
 
-![]()
+![Collapse](https://github.com/Yuhyeon0516/ReactNative-Animated-Study/assets/120432007/2095246c-fcb0-49f4-aa8a-e576544e10bf)
